@@ -81,6 +81,9 @@
 
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
+    #featured-text h1 {
+        font-size: 50px;
+    }
     .products,
     .comments {
         grid-template-columns: 1fr 1fr 1fr  ;
