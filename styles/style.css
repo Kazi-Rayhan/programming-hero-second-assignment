@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primar-color: #FFB319;
+    --secondary-color: #FFE194;
+    --light-color: #E8F6EF;
+    --accent-color: #B8DFD8;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0p;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+main {
+    margin: 0px auto;
+    width: 90%;
+}
+
+section {
+    margin: 100px 0px;
+}
+
+.xl-nav,.sm-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sm-nav{
+    color: var(--accent-color);
+    justify-content: center;
+}
+.xl-nav>span{
+    margin: 5px 20px;
+}
+
+.xl-nav .logo{
+    color: var(--accent-color);
+    
+}
+
+.xl-nav .link{
+    color: var(--primar-color) ;
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+
+.link:hover{
+    color: var(--accent-color);
+}
+
+
+#featured {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#featured-text h1 {
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+#featured-text p {
+    font-size: .9em;
+}
+
+.btn {
+
+    background-color: var(--primar-color);
+    border: none;
+    color: var(--light-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: opacity .1s ease-in;
+}
+
+.btn:hover,
+.btn-link:hover {
+    opacity: .7;
+}
+
+.btn-link {
+    transition: opacity .1s ease-in;
+    text-decoration: none;
+    background-color: none;
+    color: var(--primar-color);
+}
+
+
+.btn-arrow::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f061";
+}
+
+#featured-image {
+    background-image: url(../assets/images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+section>h1 {
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+
+/* Products */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.product {
+    border-radius: 10px;
+
+    box-shadow: 0 3px 20px var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.product img {
+    height: 50%;
+    width: 100%;
+    
+  
+}
+
+
+
+.details {
+    margin: 5px 10px;
+}
+
+
+
+.details .product-title {
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.details .product-price {
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.product-rating {
+    margin-top: 10px;
+}
+
+
+
+.stars {
+    font-size: small;
+    color: var(--primar-color);
+}
+
+.details p {
+    margin-top: 10px;
+}
+
+.featured-award {
+    display: flex;
+}
+
+.award-badge {
+
+    font-size: 150px;
+    color: var(--primar-color);
+}
+
+
+.align-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary{
+    padding: 0;
+    margin: 0;
+    color: var(--primar-color);
+}
+
+
+.comments {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.comment {
+    padding: 10px;
+    border: 1px solid var(--primar-color);
+    transition: background-color .1s ease-in, color .1s ease-in, transform .1s ease-in;
+}
+
+.comment p {
+    margin: 10px 0px;
+}
+
+.comment:hover {
+    background-color: var(--primar-color);
+    color: var(--light-color);
+    transform: scale(1.1);
+}
+
+
+
+
+footer {
+    padding: 20px 0;
+    height: 150px;
+    background-color: var(--primar-color);
+}
+
+footer h1 {
+    font-size: 35px;
+    color: var(--light-color);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.social {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primar-color);
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 50%;
+
+}
+
+.animated-image:hover{
+  
+    animation: tilt .8s ease-in 0s infinite alternate both;
+  
+    
+}
+
+@keyframes tilt {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+    
+}
